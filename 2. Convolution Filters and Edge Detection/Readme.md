@@ -62,4 +62,10 @@ Hough transform transforms image data from the x-y coordinate system into Hough 
     - filter out unwanted or irrelevant information from image
     - Amplify features like object boundaries or distinguishing traits
 
-- **Intensity and Edges**: Intensity is a measure of light and dark similar to brightness. We can use this knowledge to detect other areas or objects of interest. For example, we can often identify the edges of an object by looking at an abrupt change in intensity,
+- **Intensity and Edges**: Intensity is a measure of light and dark similar to brightness. We can use this knowledge to detect other areas or objects of interest. For example, we can often identify the edges of an object by looking at an abrupt change in intensity.
+
+Some Useful Links:
+
+- [Medium Post on Self Driving Cars](https://towardsdatascience.com/teaching-cars-to-see-advanced-lane-detection-using-computer-vision-87a01de0424f)
+
+- [Removing Biases in Machine Learning](https://godatadriven.com/blog/fairness-in-machine-learning-with-pytorch/)
