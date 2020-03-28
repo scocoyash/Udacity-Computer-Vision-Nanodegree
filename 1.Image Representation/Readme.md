@@ -7,7 +7,9 @@ This Readme contains all basic terminologies that I have come across during this
 
 A computer vision pipeline is a series of steps that most computer vision applications will go through. Many vision applications start off by acquiring images and data, then processing that data, performing some analysis and recognition steps, then finally performing an action. 
 
-![Computer Vision Pipeline](images/pipeline.png "Computer Vision Pipeline")
+![Computer Vision Pipeline](images/pipeline.png )
+*Fig. 1: Computer Vision Pipeline*
+
 
 ### Color Spaces
 Here, we will learn about popular colorspaces used in Computer Vision.
