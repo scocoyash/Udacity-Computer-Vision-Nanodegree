@@ -57,6 +57,7 @@ You need to normalize total value of the kernel.
 
 ### Hough Transform
 Hough transform transforms image data from the x-y coordinate system into Hough space, where you can easily identify simple boundaries like lines and circles. It is used in a variety of shape-recognition applications.
+
 ### Some Definitions 
 - **Filters**: Image Filters are matrices that look at groups of pixels and detect big changes in intensity in an image.
     - filter out unwanted or irrelevant information from image
@@ -64,8 +65,7 @@ Hough transform transforms image data from the x-y coordinate system into Hough 
 
 - **Intensity and Edges**: Intensity is a measure of light and dark similar to brightness. We can use this knowledge to detect other areas or objects of interest. For example, we can often identify the edges of an object by looking at an abrupt change in intensity.
 
-Some Useful Links:
-
+### Some Useful Links
 - [Medium Post on Self Driving Cars](https://towardsdatascience.com/teaching-cars-to-see-advanced-lane-detection-using-computer-vision-87a01de0424f)
 
 - [Removing Biases in Machine Learning](https://godatadriven.com/blog/fairness-in-machine-learning-with-pytorch/)
