@@ -9,6 +9,7 @@ This Readme contains all basic terminologies that I have come across during this
     Fashion MNIST
     Layers - Conv, Pooling, Dropout, FC, Softmax
     SGD using Momentum
+    Feature Visualization - Nearest Neighbours, Dimensionality Reduction
     Pytorch Documentation
 
 ---
@@ -62,6 +63,27 @@ After a couple of convolutional layers (+ReLu's), you'll see a maxpooling layer.
 Refer video in videos/ folder
 
 ----
+
+### Feature Vizualization
+- The first layer usually learns smaller feature maps such as edges, color gradients, etc. directly from the input image. Usually, it represents th high-pass filter learning phase of the model.
+- Since the weights are just another sets of matrices, for the first Layer, we can directly visualze these weights to understand what this layer has learned.
+- Since the deeper layers are not directly connected to the input image, we cannot directly visualize what they are learning using the same technique as the First Conv Layer.
+*See the feature visualization notebook for more info*
+
+#### Visualizing the final feature vector
+- To visualize what a vector represents about an image, we can compare it to other feature vectors, produced by the same CNN as it sees different input images. We can run a bunch of different images through a CNN and record the last feature vector for each image. This creates a feature space, where we can compare how similar these vectors are to one another.
+- We can measure vector-closeness by looking at the **nearest neighbors** in feature space. Nearest neighbors for an image is just an image that is near to it; that matches its pixels values as closely as possible. So, an image of an orange basketball will closely match other orange basketballs or even other orange, round shapes like an orange fruit.
+- **Nearest neighbors in feature space**: 
+In feature space, the nearest neighbors for a given feature vector are the vectors that most closely match that one; we typically compare these with a metric like MSE or L1 distance. And these images may or may not have similar pixels, which the nearest-neighbor pixel images do; instead they have very similar content, which the feature vector has distilled.
+- **Dimensionality reduction**:
+Another method for visualizing this last layer in a CNN is to reduce the dimensionality of the final feature vector so that we can display it in 2D or 3D space.
+    - *Principal Component Analysis*
+    One is PCA, principal component analysis, which takes a high dimensional vector and compresses it down to two dimensions. It does this by looking at the feature space and creating two variables (x, y) that are functions of these features; these two variables want to be as different as possible, which means that the produced x and y end up separating the original feature data distribution by as large a margin as possible.
+    - *t-SNE*:
+    TEE-SNEE tands for t-distributed stochastic neighbor embeddings. It’s a non-linear dimensionality reduction that, again, aims to separate data in a way that clusters similar data close together and separates differing data.
+
+---
+
 ### Some Useful Links
 - [Cezannec's Blog ](https://cezannec.github.io/Convolutional_Neural_Networks/)
 
