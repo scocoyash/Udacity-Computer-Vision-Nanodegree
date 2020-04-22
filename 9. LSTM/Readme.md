@@ -83,3 +83,4 @@ Here is the equations for forget gate:
 ### Some Useful Links
 - [Chris Olah's Blog](http://colah.github.io/posts/2015-08-Understanding-LSTMs/)
 - [Edwin Chen's Post](http://blog.echen.me/2017/05/30/exploring-lstms/)
+- [GRU's](http://www.cs.toronto.edu/~guerzhoy/321/lec/W09/rnn_gated.pdf)
